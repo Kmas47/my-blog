@@ -1,11 +1,13 @@
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
+import { BlogPosts } from "../client /components/blogPosts";
 
 const Home: NextPage = () => {
   return (
-   <>
-    <h1>Welcome to my amazing blog</h1>
-   </>
-  )
-}
+    <div className="h-screen">
+      <h1>Welcome to my amazing blog</h1>
+        <BlogPosts />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
