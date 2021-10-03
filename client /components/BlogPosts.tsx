@@ -16,13 +16,17 @@ export const BlogPosts = () => {
       ) : (
         <div className="flex flex-wrap bg-gray-100 h-full">
           {data.map((blog) => (
-            <div className="flex justify-center px-3 py-2 w-full md:w-1/2 xl:w-1/3 2xl:w-1/4" key={blog.id}>
+            <div
+              className="flex justify-center px-3 py-2 w-full md:w-1/2 xl:w-1/3 2xl:w-1/4"
+              key={blog.id}
+            >
               <Card key={blog.id}>
                 <CardContent
                   title={blog?.title}
                   description={blog?.description}
                   createdAt={blog?.createdAt}
                   updatedAt={blog?.updatedAt}
+                  comments={blog?.comments}
                 />
               </Card>
             </div>
