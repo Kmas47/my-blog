@@ -1,7 +1,7 @@
 import { useQuery } from "react-query";
 import { GetBlogPosts } from "../../pages/api/api-request";
-import { Card } from "./Card";
-import { CardContent } from "./CardContent";
+import { Card } from "./cards/baseCard";
+import { CardContent } from "./cards/CardContent";
 
 export const BlogPosts = () => {
   const { data, isLoading } = useQuery(

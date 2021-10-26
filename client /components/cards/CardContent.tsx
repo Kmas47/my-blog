@@ -1,8 +1,8 @@
 import dayjs from "dayjs";
-import { DATE_FORMAT, TIME_FORMAT } from "../utils/constants";
+import { DATE_FORMAT, TIME_FORMAT } from "../../utils/constants";
 import ModeCommentOutlinedIcon from "@mui/icons-material/ModeCommentOutlined";
 
-export const CardContent = (props) => {
+export const CardContent: React.FC = (props) => {
   const { title, description, createdAt, updatedAt, comments } = props;
   const formattedCreatedAt = dayjs(createdAt).format(DATE_FORMAT);
   const formattedUpdatedAt = dayjs(updatedAt).format(DATE_FORMAT);

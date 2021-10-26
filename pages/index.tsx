@@ -1,10 +1,11 @@
 import type { NextPage } from "next";
-import { BlogPosts } from "../client /components/BlogPosts";
+import { BlogPosts } from "../client /components/blogPosts";
+import { Header } from "../client /components/theme/header";
 
 const Home: NextPage = () => {
   return (
     <div className="h-screen">
-      <h1>Welcome to my amazing blog</h1>
+      <Header />
       <BlogPosts />
     </div>
   );
