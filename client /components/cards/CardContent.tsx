@@ -2,7 +2,7 @@ import dayjs from "dayjs";
 import { DATE_FORMAT, TIME_FORMAT } from "../../utils/constants";
 import ModeCommentOutlinedIcon from "@mui/icons-material/ModeCommentOutlined";
 import { Avatar } from "../avatar/avatar";
-import { ICardContentProps } from "../../../@types/CardContent";
+import { ICardContentProps } from "../../../@types/blogPosts";
 
 export const CardContent = (props: ICardContentProps) => {
   const { title, description, updatedAt, comments, authors } = props;
