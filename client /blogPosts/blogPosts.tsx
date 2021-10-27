@@ -1,8 +1,8 @@
 import { useQuery } from "react-query";
 import { IBlogPost } from "../../@types/blogPosts";
 import { GetBlogPosts } from "../../pages/api/api-request";
-import { Card } from "./cards/baseCard";
-import { CardContent } from "./cards/CardContent";
+import { Card } from "../components/cards/baseCard";
+import { CardContent } from "../components/cards/cardContent";
 
 export const BlogPosts = () => {
   const { data, isLoading } = useQuery(
