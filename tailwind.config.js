@@ -1,11 +1,5 @@
 module.exports = {
-  purge: [
-    "./pages/**/*.js",
-    "./client/**/*.js",
-    "./client/blogPosts/*.js",
-    "./client/components/**/*.js",
-    "./client/utils/*.js",
-  ],
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./client/**/*.{js,ts,jsx,tsx}"],
   darkMode: "media",
   theme: {
     screens: {
