@@ -41,7 +41,12 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      animation: ['motion-safe'],
+      boxShadow: ['responsive', 'hover', 'focus'],
+      translate: ['hover'],
+      transform: ['hover']
+    },
   },
   plugins: [
     require('@tailwindcss/line-clamp'),

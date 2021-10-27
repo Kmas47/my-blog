@@ -8,17 +8,15 @@ export const BlogPosts = () => {
     `BlogPosts/${GetBlogPosts}`,
     GetBlogPosts
   );
-  console.log(data);
-
   return (
     <div>
       {isLoading ? (
         <h1> loading </h1>
       ) : (
-        <div className="flex flex-wrap bg-gray-100 h-full">
+        <div className="flex justify-center flex-wrap bg-gray-100 h-full">
           {data.slice(0, 5).map((blog) => (
             <div
-              className="flex justify-center px-3 py-2 w-full md:w-1/2 xl:w-1/3 2xl:w-1/4"
+              className="flex justify-center px-3 py-2 w-full max-w-screen-lg"
               key={blog.id}
             >
               <Card key={blog.id}>
@@ -28,6 +26,7 @@ export const BlogPosts = () => {
                   createdAt={blog?.createdAt}
                   updatedAt={blog?.updatedAt}
                   comments={blog?.comments}
+                  authors={blog?.authors}
                 />
               </Card>
             </div>
